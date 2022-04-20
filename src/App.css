@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: rgb(27, 76, 133);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.todoform{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 40rem;
+  min-height: 10rem;
+  border-radius: 12px;
+  font-family: 'Anek Telugu', sans-serif;
+  padding: 10px 0;
+ }
+.header{
+  color: #fff;
+  padding: 20px;
+}
+.forminput{
+  display: flex;
+}
+.forminput input{
+  width: 30rem;
+  height: 3rem;
+  border-radius: 5px 0 0 5px;
+  border: 3px solid #5d0cff;
+  outline: none;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn{
+  height: 3rem;
+  width: 4rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.showitems{
+  color:#fff;
+  margin: 20px;
+}
+.todos{
+  display: flex;
+  justify-content: space-between;
+  width: 29rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #5d0cff;
+  margin: 20px;
+}
+.todos:hover{
+  background-color: #fff;
+  color: #000;
+}
+.todo span{
+  width: 10px;
+  height: 10px;
+}
+.clear-all{
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 7px;
+  height: 2rem;
+  width: 5rem;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.clear-all:hover{
+  transform: scale(1,1.1);
+}
+.icons{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* .editicon{
+  color: #fff;
+} */
